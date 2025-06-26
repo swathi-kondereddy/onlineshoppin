@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Doucmenr</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: white;
+
+            margin: 10px auto;
+            padding: 2px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        h2 {
+            padding: 2px;
+            margin: 7px;
+        }
+
+        .products-row {
+            margin: 15px;
+            border: 2px solid black;
+            padding: 2px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        button {
+            border-radius: 5px;
+            border: none;
+            background-color: blue;
+            color: white;
+            margin: 3px;
+        }
+
+        button:hover {
+            background-color: blueviolet;
+        }
+
+        .cartcontainer {
+            margin: 15px;
+            border: 2px solid black;
+            padding: 2px;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+        #feedbackelement{
+            position: fixed;
+            top:20px;
+            right: 20px;
+            /* background-color:white; */
+            padding: 10px;
+            color: white;
+        }
+        #total{
+            text-align: right;
+        }
+        button {
+            border-radius: 5px;
+            border: none;
+            background-color: blue;
+            color: white;
+            margin: 5px;
+            padding:7px;
+        }
+
+        button:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online shopping</h1>
+        <p id ="feedbackelement"></p>
+        <h2>Avilable products</h2>
+        <div id="productscontainer">
+            <!-- <div class="products-row">
+                <p>Laptop -Rs. 25000</p>
+                <button>Add to cart</button>
+
+            </div>
+            <div class="products-row">
+                <p>Laptop -Rs. 25000</p>
+                <button>Add to cart</button>
+
+            </div>
+            <div class="products-row">
+                <p>Laptop -Rs. 25000</p>
+                <button>Add to cart</button>
+
+            </div>
+            <div class="products-row">
+                <p>Laptop -Rs. 25000</p>
+                <button>Add to cart</button>
+
+            </div> -->
+        </div>
+
+        <h2>My Cart</h2>
+        <div id="cartcontainer">
+<!--             
+            <div class="products-row">
+                <p>Laptop -Rs. 25000</p>
+                <button>Add to cart</button>
+
+            </div> -->
+
+        </div>
+        <h2 id ="total"></h2>
+        <h2>Actions</h2>
+        <button id ="sotybyprice">Sort Cart by price</button>
+        <button id ="clearcart">Clear Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
